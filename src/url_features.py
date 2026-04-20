@@ -1,7 +1,6 @@
 """
 url_features.py
 PhishGuard — URL Feature Extraction Module
-Kraken'X 2026 Hackathon
 
 Extracts handcrafted features from URLs for phishing detection.
 Compatible with scikit-learn pipelines.

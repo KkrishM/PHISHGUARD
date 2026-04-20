@@ -1,7 +1,6 @@
 """
 train_url.py
 PhishGuard — URL Model Training Script (Fixed)
-Kraken'X 2026 Hackathon
 
 Uses only features extractable directly from URL text,
 so the model works correctly in the live Streamlit app.

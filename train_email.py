@@ -1,7 +1,6 @@
 """
 train_email.py
 PhishGuard — Email Phishing Detection Training Script
-Kraken'X 2026 Hackathon
 
 Trains a TF-IDF + Logistic Regression model on email text
 to detect phishing emails.
