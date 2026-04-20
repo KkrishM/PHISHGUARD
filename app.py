@@ -307,8 +307,8 @@ def get_url_flags(url: str) -> list:
 # HEADER
 # ──────────────────────────────────────────────
 
-st.markdown('<div class="main-title">🛡️ PhishGuard</div>', unsafe_allow_html=True)
-st.markdown('<div class="subtitle">AI-Powered Phishing URL Detector • Kraken\'X 2026</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-title"> PhishGuard</div>', unsafe_allow_html=True)
+st.markdown('<div class="subtitle">AI-Powered Phishing URL Detector • By Krish Malik</div>', unsafe_allow_html=True)
 
 st.markdown("---")
 
@@ -430,7 +430,7 @@ with tab2:
         st.markdown("""
             <div class="stat-box">
                 <div style="font-size:2rem;">🎯</div>
-                <div style="font-size:1.8rem; font-weight:800; color:#58a6ff;">96.11%</div>
+                <div style="font-size:1.8rem; font-weight:800; color:#58a6ff;">89.24%</div>
                 <div style="color:#8b949e;">Accuracy</div>
             </div>
         """, unsafe_allow_html=True)
@@ -446,7 +446,7 @@ with tab2:
         st.markdown("""
             <div class="stat-box">
                 <div style="font-size:2rem;">🧠</div>
-                <div style="font-size:1.8rem; font-weight:800; color:#2ea043;">87</div>
+                <div style="font-size:1.8rem; font-weight:800; color:#2ea043;">38</div>
                 <div style="color:#8b949e;">Features Used</div>
             </div>
         """, unsafe_allow_html=True)
@@ -502,13 +502,13 @@ with tab3:
     **PhishGuard** is an AI-powered phishing URL detection system built for **Kraken'X 2026** hackathon.
 
     It uses a **Random Forest classifier** trained on 11,430 real-world URLs to detect phishing attempts
-    with **96.11% accuracy**.
+    with **89.24% accuracy**.
 
     ---
 
     ### 🔬 How it works
     1. You paste a URL into the input box
-    2. PhishGuard extracts 87 features from the URL (length, symbols, keywords, domain structure, etc.)
+    2. PhishGuard extracts 38 features from the URL (length, symbols, keywords, domain structure, etc.)
     3. The trained ML model analyses these features
     4. You get an instant result with a confidence score and red flags
 
@@ -523,10 +523,7 @@ with tab3:
     | Language | Python 3.14 |
 
     ---
-
-    ### 👥 Team
-    Built with ❤️ at **Kraken'X 2026**
-    *AI/ML Club × AI-Tronics Hub*
+    *PhishGuard • Made by Krish Malik*
     """)
 
 
@@ -536,7 +533,6 @@ with tab3:
 
 st.markdown("""
     <div class="footer">
-         PhishGuard • Built for Kraken'X 2026 •
-        Made by Krish Malik
+         PhishGuard • Made by Krish Malik
     </div>
 """, unsafe_allow_html=True)
