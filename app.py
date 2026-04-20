@@ -497,7 +497,7 @@ with tab2:
 # ══════════════════════════════════════════════
 
 with tab3:
-    st.markdown("### 🛡️ About PhishGuard")
+    st.markdown("###  About PhishGuard")
     st.markdown("""
     **PhishGuard** is an AI-powered phishing URL detection system built for **Kraken'X 2026** hackathon.
 
@@ -536,7 +536,7 @@ with tab3:
 
 st.markdown("""
     <div class="footer">
-        🛡️ PhishGuard • Built for Kraken'X 2026 •
-        Powered by Random Forest + Streamlit
+         PhishGuard • Built for Kraken'X 2026 •
+        Made by Krish Malik
     </div>
 """, unsafe_allow_html=True)
