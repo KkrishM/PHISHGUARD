@@ -1,7 +1,6 @@
 """
 app.py
-PhishGuard — Streamlit Dashboard (Full Version)
-Kraken'X 2026 Hackathon
+PhishGuard — Streamlit Dashboard 
 """
 
 import streamlit as st
@@ -217,7 +216,7 @@ def get_email_flags(text):
 
 # ── Header ──
 st.markdown('<div class="main-title">🛡️ PhishGuard</div>', unsafe_allow_html=True)
-st.markdown('<div class="subtitle">AI-Powered Phishing Detector • Kraken\'X 2026</div>', unsafe_allow_html=True)
+st.markdown('<div class="subtitle">AI-Powered Phishing Detector </div>', unsafe_allow_html=True)
 st.markdown("---")
 
 tab1, tab2, tab3, tab4 = st.tabs(["🔍 Check URL", "📧 Check Email", "📊 Model Stats", "ℹ️ About"])
@@ -352,7 +351,7 @@ with tab3:
 with tab4:
     st.markdown("### 🛡️ About PhishGuard")
     st.markdown("""
-    **PhishGuard** is an AI-powered phishing detection system built for **Kraken'X 2026** hackathon.
+    **PhishGuard** is an AI-powered phishing detection system built by **Krish Malik**.
     It detects phishing in both **URLs and Emails** using Machine Learning.
 
     ---
@@ -375,9 +374,8 @@ with tab4:
     - Trees: 300 | Max Depth: 20
 
     ---
-    ### 👥 Team
-    Built with ❤️ at **Kraken'X 2026**
-    *AI/ML Club × AI-Tronics Hub • 24–25 April 2026*
+    ### By
+    **Krish Malik**
     """)
 
-st.markdown('<div class="footer">🛡️ PhishGuard • Kraken\'X 2026 • URL: 89.55% • Email: 98.28%</div>', unsafe_allow_html=True)
+st.markdown('<div class="footer">🛡️ PhishGuard • Krish Malik • URL: 89.55% • Email: 98.28%</div>', unsafe_allow_html=True)
