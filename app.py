@@ -430,7 +430,7 @@ with tab2:
         st.markdown("""
             <div class="stat-box">
                 <div style="font-size:2rem;">🎯</div>
-                <div style="font-size:1.8rem; font-weight:800; color:#58a6ff;">89.24%</div>
+                <div style="font-size:1.8rem; font-weight:800; color:#58a6ff;">89.55%</div>
                 <div style="color:#8b949e;">Accuracy</div>
             </div>
         """, unsafe_allow_html=True)
@@ -502,7 +502,7 @@ with tab3:
     **PhishGuard** is an AI-powered phishing URL detection system built for **Kraken'X 2026** hackathon.
 
     It uses a **Random Forest classifier** trained on 11,430 real-world URLs to detect phishing attempts
-    with **89.24% accuracy**.
+    with **89.55% accuracy**.
 
     ---
 

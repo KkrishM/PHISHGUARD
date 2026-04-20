@@ -61,11 +61,35 @@ print(f"✅ Train: {len(X_train)} | Test: {len(X_test)}")
 
 # ── Train ──
 print("\n🏋️  Training model...")
-model = RandomForestClassifier(
-    n_estimators=200, max_depth=15, random_state=42, n_jobs=-1
+from sklearn.model_selection import GridSearchCV
+
+print("\n🔍 Tuning model — trying different settings...")
+print("   (This may take 3-5 minutes...)\n")
+
+param_grid = {
+    "n_estimators": [100, 200, 300],
+    "max_depth": [10, 15, 20, None],
+    "min_samples_split": [2, 5],
+    "min_samples_leaf": [1, 2],
+}
+
+grid_search = GridSearchCV(
+    RandomForestClassifier(random_state=42, n_jobs=-1),
+    param_grid,
+    cv=3,              # 3-fold cross validation
+    scoring="accuracy",
+    verbose=1,         # shows progress
+    n_jobs=-1
 )
-model.fit(X_train, y_train)
-print("✅ Model trained!")
+
+grid_search.fit(X_train, y_train)
+
+print(f"\n✅ Best settings found:")
+for k, v in grid_search.best_params_.items():
+    print(f"   {k}: {v}")
+
+model = grid_search.best_estimator_
+print("\n✅ Model trained with best settings!")
 
 # ── Evaluate ──
 y_pred = model.predict(X_test)
